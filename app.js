@@ -11,6 +11,11 @@ app.use("/api/v1", portfolioRouter);
 
 const PORT = process.env.PORT || 3000;
 
+app.get("/", (req, res) => {
+    res.send("Welcome to my portfolio back-end!");
+});
+
+
 
 const connect = async () => {
     try {
